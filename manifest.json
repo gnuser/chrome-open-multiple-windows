@@ -1,0 +1,33 @@
+{
+  "name": "fast tab",
+  "description": "quickly open specified url in multiple splited windows",
+  "version": "1.0",
+  "manifest_version": 2,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["storage"],
+  "commands": {
+    "tab-0": {
+      "description": "Undo previous resize",
+      "suggested_key": {
+        "default": "Ctrl+Shift+0",
+        "mac": "MacCtrl+Shift+0"
+      }
+    },
+    "tab-1": {
+      "description": "Resize 1x1 layout",
+      "suggested_key": {
+        "default": "Ctrl+Shift+1",
+        "mac": "MacCtrl+Shift+1"
+      }
+    },
+    "tab-2": {
+      "description": "Resize 2x2 layout",
+      "suggested_key": {
+        "default": "Ctrl+Shift+4",
+        "mac": "MacCtrl+Shift+4"
+      }
+    }
+  }
+}
